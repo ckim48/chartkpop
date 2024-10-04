@@ -68,7 +68,8 @@
               <h2>Discover K-House Innovation</h2>
               <p>Powered by AI-driven insights for a more personalized and engaging customer experience.</p>
 
-            <a href="#about" class="btn-get-started">Learn More</a>
+            <a href="#about" class="btn-get-started me-3">Learn More</a>
+            <a href="https://sqi7yf9puzoiz817-79001288996.shopifypreview.com" class="btn-get-started">Demo App</a>
           </div>
         </div>
       </div>
@@ -202,7 +203,7 @@ The new K-House brings new changes and features. These features will allow the u
             <div class="text-center">
               <h3>Visit Our Demo Dashboard</h3>
               <p>To see how the data collected from these new features will be displayed on our website, follow the link below to a demo website.</p>
-              <a class="cta-btn" href="https://khouse-dashboard.netlify.app">Check Our Demo Dashboard</a>
+              <a  id="loginButton" class="cta-btn" >Check Our Demo Dashboard</a>
             </div>
           </div>
         </div>
@@ -338,7 +339,23 @@ The new K-House brings new changes and features. These features will allow the u
       });
   });
 </script>
+    <script>
+        // JavaScript to handle login
+        document.getElementById('loginButton').addEventListener('click', function() {
+            // Prompt for username and password
+            const username = prompt("Enter your username:");
+            const password = prompt("Enter your password:");
 
+            // Check credentials
+            if (username === "testtest" && password === "123") {
+                // Redirect to the dashboard if credentials match
+                window.location.href = "chart.html"; // Change this to your actual dashboard URL
+            } else {
+                // Display an error message
+                alert("Invalid credentials! Access denied.");
+            }
+        });
+    </script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
