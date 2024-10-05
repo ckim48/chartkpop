@@ -5,7 +5,9 @@
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
-
+.aimg{
+  border-radius: 5px;
+}
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
@@ -254,6 +256,26 @@ h6 {
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+.mbtn,
+.mbtn:focus {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 25px;
+  margin: 0 0 0 1px;
+  border-radius: 50px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-family: var(--nav-font);
+}
+
+.mbtn:hover,
+.mbtn:focus:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
@@ -1063,6 +1085,7 @@ section,
 }
 
 .call-to-action .cta-btn {
+  cursor: pointer;
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 16px;
@@ -2009,10 +2032,39 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+.myimg {
+  width: 550px;
+  height: 270px;
+  border: 1px solid #e0e0e0; /* Light gray border for a softer look */
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.3s; /* Smooth transform on hover */
+}
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.myimg:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.myspan {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.card {
+  background-color: #ffffff;
+}
+
+.card-body {
+  padding: 20px; /* Padding for card body */
+}
+
+.just {
+  color: #555; /* Darker gray for text */
+  line-height: 1.6; /* Increased line height for better readability */
+}
+
+/* Additional styles for responsive design */
+@media (max-width: 768px) {
+  .myimg {
+    width: 100%; /* Full width on smaller screens */
+  }
 }
